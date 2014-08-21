@@ -1,0 +1,10 @@
+def say(a=1, b=2):
+    print a, b
+
+
+def haha(**kw):
+    # say(kw)
+    apply(say, (), kw)
+
+
+print haha(a=1, b=2)
