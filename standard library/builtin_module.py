@@ -297,4 +297,24 @@ dump(c)
 dump(d)
 
 """
+
+# 使用eval函数
+
+
+def dump(expression):
+    result = eval(expression)
+    print expression, "=>", result, type(result)
+
+
+# dump('1')
+# dump('1.0')
+# dump("'string'")
+# dump('1.0 + 2.0')
+# dump("'*' * 10")
+# dump("len('world')")
+
+
+print eval("__import__('os').getcwd()")
+print eval("__import__('os').remove('file')", {"__builtins__": {}})
+
 # This is the end
