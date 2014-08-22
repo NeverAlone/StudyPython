@@ -209,4 +209,92 @@ def load(file):
 print len(load('C:\\Users\\Lonely\\Desktop\\test.py'))
 """
 
+
+# 使用callable函数
+
+"""
+def dump(function):
+    if callable(function):
+        print function, "is callable"
+    else:
+        print function, "is not callable"
+
+
+class A:
+
+    def method(self, value):
+        return value
+
+
+class B(A):
+
+    def __call__(self, value):
+        return value
+
+a = A()
+b = B()
+
+dump(0)
+dump('string')
+dump(callable)
+dump(dump)
+
+dump(A)
+dump(B)
+dump(B.method)
+
+
+dump(a)
+dump(b)
+dump(b.method)
+
+"""
+
+
+# 使用isinstance函数
+
+# issubclass 函数在接受非类对象时会引发异常
+
+
+"""
+class A:
+    pass
+
+
+class B:
+    pass
+
+
+class C(A):
+    pass
+
+
+class D(A, B):
+    pass
+
+
+def dump(object):
+    print object, "=>",
+    if isinstance(object, A):
+        print "A",
+    if isinstance(object, B):
+        print "B",
+    if isinstance(object, C):
+        print "C",
+    if isinstance(object, D):
+        print "D",
+    print
+
+
+a = A()
+b = B()
+c = C()
+d = D()
+
+dump(a)
+dump(b)
+dump(c)
+dump(d)
+
+"""
 # This is the end
