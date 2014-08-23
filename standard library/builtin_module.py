@@ -300,11 +300,11 @@ dump(d)
 
 # 使用eval函数
 
-
+'''
 def dump(expression):
     result = eval(expression)
     print expression, "=>", result, type(result)
-
+'''
 
 # dump('1')
 # dump('1.0')
@@ -316,9 +316,4 @@ def dump(expression):
 
 # print eval("__import__('os').getcwd()")
 # print eval("__import__('os').remove('file')", {"__builtins__": {}})
-
-
-# 从 _ _builtin_ _ 模块重载函数
-
-# 显式地访问 _ _builtin__ 模块中的函数
 # This is the end
